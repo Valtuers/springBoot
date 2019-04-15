@@ -1,5 +1,7 @@
 package com.lmc.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.lmc.bean.AvGirl;
 import com.lmc.dao.AvGirlMapper;
 import com.lmc.service.AvGirlService;
@@ -25,5 +27,12 @@ public class AvGirlServiceImpl implements AvGirlService {
     @Override
     public AvGirl findById(int id) {
         return avGirlMapper.selectById(id);
+    }
+
+    @Override
+    public PageInfo<AvGirl> findByPage(int pageNum, int pageSize) {
+        PageHelper.startPage(pageNum,pageSize);
+        PageInfo<AvGirl> list = new PageInfo<>(avGirlMapper.selectAll());
+        return list;
     }
 }

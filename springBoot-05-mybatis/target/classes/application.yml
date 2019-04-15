@@ -10,7 +10,11 @@ spring:
     maxWait: 50000
 
 
-#\u914D\u7F6Emybatis
+#配置Emybatis
 mybatis:
   type-aliases-package: com.lmc.bean
   mapper-locations: classpath:com/lmc/dao/mapping/*.xml
+
+#配置pagehelper
+pagehelper:
+  helper-dialect: mysql

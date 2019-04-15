@@ -1,5 +1,6 @@
 package com.lmc.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.lmc.bean.AvGirl;
 import com.lmc.service.AvGirlService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,5 +26,11 @@ public class AvController {
     @ResponseBody
     public AvGirl getGirl(int id){
         return avGirlService.findById(id);
+    }
+
+    @RequestMapping("/av")
+    @ResponseBody
+    public PageInfo<AvGirl> av(int num){
+        return avGirlService.findByPage(num,5);
     }
 }
