@@ -1,5 +1,4 @@
 # springBoot练习
-<<<<<<< HEAD
 
 #### # 01-HelloWorld
 springboot的一个helloworld程序
@@ -31,5 +30,3 @@ jdbc使用dbcp链接数据库和yml配置文件，用java配置数据池
 #### # 08-cache
 
 使用缓存注解
-=======
->>>>>>> 2ba124c40bf6d6caf045e7e0b9b7b51796941f84
