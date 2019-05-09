@@ -1,8 +1,8 @@
-package com.lmc.controller.user;
+package com.lmc.controller;
 
 import com.github.pagehelper.PageInfo;
-import com.lmc.bean.user.User;
-import com.lmc.service.user.UserService;
+import com.lmc.bean.User;
+import com.lmc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,27 +16,22 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping("/allUser")
+    @RequestMapping("/user")
     @ResponseBody
-    public List<User> allUser(){
+    public List<User> getUser(){
         return userService.findAll();
     }
 
-    @RequestMapping("/user")
+    @RequestMapping("/userId")
     @ResponseBody
-    public User userByOne(int id){
+    public User getUserById(int id){
+        System.out.println(id);
         return userService.findById(id);
     }
 
-    @RequestMapping("/setUser")
+    @RequestMapping("/u")
     @ResponseBody
-    public User setUser(String username,String password){
-        return userService.setUser(username,password);
-    }
-
-    @RequestMapping("/userPage")
-    @ResponseBody
-    public PageInfo<User> userPage(int num){
-        return userService.userPage(num);
+    public PageInfo<User> u(int num){
+        return userService.findByPage(num,5);
     }
 }

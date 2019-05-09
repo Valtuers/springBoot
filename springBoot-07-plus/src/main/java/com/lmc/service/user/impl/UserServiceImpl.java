@@ -1,5 +1,7 @@
 package com.lmc.service.user.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.lmc.bean.user.User;
 import com.lmc.dao.mapper.user.UserMapper;
 import com.lmc.service.user.UserService;
@@ -36,5 +38,11 @@ public class UserServiceImpl implements UserService {
         stringRedisTemplate.opsForValue().set("user",JsonUtils.objectToJson(user));
         System.out.println(stringRedisTemplate.opsForValue().get("user"));
         return user;
+    }
+
+    @Override
+    public PageInfo<User> userPage(int num) {
+        PageHelper.startPage(num,2);
+        return  new PageInfo<>(userMapper.selectAll());
     }
 }

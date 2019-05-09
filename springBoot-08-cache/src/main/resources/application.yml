@@ -1,0 +1,22 @@
+server:
+  port: 8585
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&chararcterEncoding=utf-8
+    username: root
+    password: root
+  resources:
+    static-locations: classpath:/static,classpath:/templates
+
+#配置mybatis
+mybatis:
+  type-aliases-package: com.lmc.bean
+  mapper-locations: classpath:com/lmc/dao/*.xml
+
+logging:
+  level:
+    com:
+      lmc:
+        dao: debug

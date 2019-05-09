@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lmc</groupId>
-    <artifactId>springboot-07-plus</artifactId>
-    <version>0.0.1</version>
-    <name>springboot-07-plus</name>
+    <artifactId>springboot-08-cache</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>springboot-08-cache</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -21,19 +21,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-            <!-- springboot默认使用lettuce的java-redis客户端，这里我们不使用它 -->
-            <exclusions>
-                <exclusion>
-                    <groupId>io.lettuce</groupId>
-                    <artifactId>lettuce-core</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <!-- 因为不使用lettuce，所以添加jedis依赖 -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
+            <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -44,7 +32,12 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.0.1</version>
         </dependency>
-
+        <!-- 阿里巴巴数据库连接池，等同于dbcp连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.16</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -56,21 +49,10 @@
             <version>5.1.41</version>
             <scope>runtime</scope>
         </dependency>
-        <!-- 阿里巴巴数据库连接池，等同于dbcp连接池 -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.1.16</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.2.5</version>
         </dependency>
     </dependencies>
 

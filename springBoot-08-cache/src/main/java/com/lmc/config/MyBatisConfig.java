@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan("com.lmc.dao.mapper")
+@MapperScan("com.lmc.dao")
 public class MyBatisConfig {
 
     @Bean

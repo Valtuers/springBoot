@@ -1,16 +1,16 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/lmcsql?useUnicode=true&chararcterEncoding=utf-8
+    url: jdbc:mysql:///demo?useUnicode=true&chararcterEncoding=utf-8
     username: root
-    password: Lmcsql1132
+    password: root
     initiaSize: 500
     maxActive: 100
     minIdle: 10
     maxWait: 50000
 
 
-#配置Emybatis
+#配置mybatis
 mybatis:
   type-aliases-package: com.lmc.bean
   mapper-locations: classpath:com/lmc/dao/mapping/*.xml

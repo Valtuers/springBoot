@@ -1,4 +1,4 @@
-package com.lmc.service.impl;
+package com.lmc.service.user.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;

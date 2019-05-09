@@ -1,7 +1,7 @@
-package com.lmc.service.user;
+package com.lmc.service;
 
 import com.github.pagehelper.PageInfo;
-import com.lmc.bean.user.User;
+import com.lmc.bean.User;
 
 import java.util.List;
 
@@ -10,7 +10,5 @@ public interface UserService {
 
     User findById(int id);
 
-    User setUser(String username,String password);
-
-    PageInfo<User> userPage(int num);
+    PageInfo<User> findByPage(int pageNum, int pageSize);
 }
