@@ -1,4 +1,4 @@
-package com.lmc.service;
+package com.lmc.service.user;
 
 import com.lmc.bean.User;
 
