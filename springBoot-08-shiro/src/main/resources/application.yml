@@ -1,0 +1,13 @@
+spring:
+  thymeleaf:
+    cache: false
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///demo?useUnicode=true&chararcterEncoding=utf-8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  type-aliases-package: com.lmc.bean
+  mapper-locations: classpath:com/lmc/dao/**/mapping/*.xml

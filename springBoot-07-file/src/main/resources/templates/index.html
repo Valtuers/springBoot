@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@1.6/lib/index.css">
+    <!-- 引入组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@1.6/lib/vant.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<form action="/uploadFile" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" multiple />
+    <input type="submit" value="提交"/>
+</form>
+<div id="app">
+    <van-uploader :after-read="onRead">
+        <van-button type="info">base64上传文件</van-button>
+    </van-uploader>
+    <img :src="img"/>
+</div>
+<a href="/pdf">打印pdf</a>
+<a href="/excel">导出excel</a>
+
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data:{
+            img: ''
+        },
+        methods:{
+            onRead(file) {
+                this.img = file.content;
+                axios.post("/uploadFileBase64","base64Data="+file.content).then((res)=>{
+                    console.log(res.data);
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

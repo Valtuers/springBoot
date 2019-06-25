@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///demo?useUnicode=true&chararcterEncoding=utf-8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    initiaSize: 500
+    maxActive: 100
+    minIdle: 10
+    maxWait: 50000
+    # 事务隔离级别数字配置的含义
+    # -1 数据库默认隔离级别
+    # 1 未提交读
+    # 2 读写提交
+    # 4 可重复读(消耗资源大)
+    # 8 串行
+    # tomcat 数据源默认隔离级别
+    tomcat:
+      default-transaction-isolation: 2
+
+#配置mybatis
+mybatis:
+  type-aliases-package: com.lmc.bean
+  mapper-locations: classpath:com/lmc/dao/**/mapping/*.xml
+  # 打印sql语句
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#配置pagehelper
+pagehelper:
+  helper-dialect: mysql

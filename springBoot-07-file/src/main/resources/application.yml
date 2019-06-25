@@ -1,0 +1,23 @@
+#上传文件配置
+spring:
+  servlet:
+    #是否启用 Spring MVC multipart上传功能
+    multipart:
+      enabled: true
+      #将文件写入磁盘的阀值。值可以使用后缀“MB ”或“ KB 来表示兆字节或字节大小
+      file-size-threshold: 0
+      #指定默认上传的文件夹
+      location: D:\IntelliJ IDEA\project\springBoot\springBoot-10-file\src\main\resources\static
+      #限制单个文件最大值
+      max-file-size: 100MB
+      #限制所有文件最大值
+      max-request-size: 200MB
+      #是否延迟多部件文件请求的参数和文件的解析
+      resolve-lazily: false
+  resources:
+    static-locations: classpath:/static,classpath:/templates
+
+server:
+  tomcat:
+    #设置post最大数据为20m
+    max-http-post-size: 20480000

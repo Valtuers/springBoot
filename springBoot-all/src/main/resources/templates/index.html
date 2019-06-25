@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/lib/VueTools/Vue/vue.min.js"></script>
+    <!-- 引入vant -->
+    <link rel="stylesheet" href="/lib/VueTools/vant/vant.css">
+    <script src="/lib/VueTools/vant/vant.js"></script>
+    <link rel="stylesheet" href="/lib/VueTools/element-ui/element-ui.css">
+    <script src="/lib/VueTools/element-ui/element-ui.js"></script>
+    <script src="/lib/VueTools/Vue/axios.min.js"></script>
+</head>
+<style>
+    .main_bar{
+        position: fixed;
+        left: 0;
+        top: 61px;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+</style>
+<body>
+<div id="app">
+    <el-dialog title="提示" :visible.sync="logOutModel" width="30%">
+        <span>是否确定退出账户？</span>
+        <span slot="footer" class="dialog-footer">
+            <el-button type="primary" @click="logOut">确 定</el-button>
+            <el-button @click="logOutModel=false">取 消</el-button>
+        </span>
+    </el-dialog>
+    <el-menu :default-active="activeName" class="el-menu-demo" mode="horizontal"
+             @select="handleSelect">
+        <el-menu-item index="home">首页</el-menu-item>
+        <el-menu-item index="user">用户页面</el-menu-item>
+        <el-menu-item index="admin">管理员页面</el-menu-item>
+        <el-menu-item index="login">登陆</el-menu-item>
+        <el-menu-item index="register">注册</el-menu-item>
+        <el-menu-item index="logOut" style="float:right;">登出</el-menu-item>
+    </el-menu>
+    <iframe :src="'/'+activeName" class="main_bar" frameborder="0" scrolling="yes" name="MainBar"
+            id="MainBar"></iframe>
+</div>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data:{
+            activeName: 'home',
+            logOutModel: false
+        },
+        methods:{
+            handleSelect(key) {
+                if(key==='logOut'){
+                    this.logOutModel = true;
+                }else{
+                    this.activeName = key;
+                }
+            },
+            logOut(){
+                axios.get("/logOut").then(()=>{
+                    window.location.reload();
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>
