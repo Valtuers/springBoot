@@ -30,7 +30,7 @@
     </insert>
 
     <update id="updateUser">
-        update role set name=#{name} where id=#{id}
+        update user set username=#{username} where id=#{id}
     </update>
 
     <update id="updateRole">

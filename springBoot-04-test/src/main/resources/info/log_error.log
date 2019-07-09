@@ -1,0 +1,2 @@
+2019-06-26 12:19:09.678 [http-nio-8080-exec-2] ERROR com.lmc.controller.TestController - 这是error级别日志
+2019-06-26 12:19:43.281 [http-nio-8080-exec-3] ERROR com.lmc.controller.TestController - 这是error级别日志

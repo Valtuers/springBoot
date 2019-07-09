@@ -1,0 +1,94 @@
+2019-06-26 11:13:19.194 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Starting Springboot04TestApplication on DESKTOP-TQGU9NB with PID 26416 (started by Sasuke in D:\IntelliJ IDEA\project\springBoot)
+2019-06-26 11:13:19.197 [restartedMain] INFO  com.lmc.Springboot04TestApplication - No active profile set, falling back to default profiles: default
+2019-06-26 11:13:19.269 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-26 11:13:19.269 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-26 11:13:19.981 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-26 11:13:19.989 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-26 11:13:19.996 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-06-26 11:13:19.996 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-26 11:13:20.059 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-26 11:13:20.059 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 789 ms
+2019-06-26 11:13:20.173 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-26 11:13:20.270 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-06-26 11:13:20.286 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-26 11:13:20.304 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-26 11:13:20.307 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Started Springboot04TestApplication in 1.467 seconds (JVM running for 1.956)
+2019-06-26 12:04:33.808 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-26 12:04:33.810 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-06-26 12:04:33.823 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-06-26 12:09:18.429 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Starting Springboot04TestApplication on DESKTOP-TQGU9NB with PID 9712 (started by Sasuke in D:\IntelliJ IDEA\project\springBoot)
+2019-06-26 12:09:18.433 [restartedMain] INFO  com.lmc.Springboot04TestApplication - No active profile set, falling back to default profiles: default
+2019-06-26 12:09:18.504 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-26 12:09:18.504 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-26 12:09:19.155 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-26 12:09:19.164 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-26 12:09:19.169 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-06-26 12:09:19.169 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-26 12:09:19.234 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-26 12:09:19.234 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 730 ms
+2019-06-26 12:09:19.347 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-26 12:09:19.435 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-06-26 12:09:19.449 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-26 12:09:19.463 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-26 12:09:19.465 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Started Springboot04TestApplication in 1.383 seconds (JVM running for 1.848)
+2019-06-26 12:09:23.064 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-26 12:09:23.064 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-06-26 12:09:23.067 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2019-06-26 12:10:25.666 [http-nio-8080-exec-8] INFO  com.lmc.controller.TestController - 这是info级别日志
+2019-06-26 12:10:42.736 [http-nio-8080-exec-10] INFO  com.lmc.controller.TestController - 这是info级别日志
+2019-06-26 12:17:16.385 [http-nio-8080-exec-4] INFO  com.lmc.controller.TestController - 这是info级别日志
+2019-06-26 12:17:46.013 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Starting Springboot04TestApplication on DESKTOP-TQGU9NB with PID 1228 (started by Sasuke in D:\IntelliJ IDEA\project\springBoot)
+2019-06-26 12:17:46.015 [restartedMain] INFO  com.lmc.Springboot04TestApplication - No active profile set, falling back to default profiles: default
+2019-06-26 12:17:46.068 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-26 12:17:46.069 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-26 12:17:46.817 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-26 12:17:46.826 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-26 12:17:46.831 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-06-26 12:17:46.831 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-26 12:17:46.887 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-26 12:17:46.888 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 819 ms
+2019-06-26 12:17:47.016 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-26 12:17:47.129 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-06-26 12:17:47.145 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-26 12:17:47.160 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-26 12:17:47.162 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Started Springboot04TestApplication in 1.467 seconds (JVM running for 1.93)
+2019-06-26 12:18:17.944 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-26 12:18:17.945 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-06-26 12:18:17.949 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2019-06-26 12:18:17.963 [http-nio-8080-exec-2] INFO  com.lmc.controller.TestController - 这是info级别日志
+2019-06-26 12:18:49.137 [http-nio-8080-exec-3] INFO  com.lmc.controller.TestController - 这是info级别日志
+2019-06-26 12:19:01.711 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-26 12:19:01.895 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Starting Springboot04TestApplication on DESKTOP-TQGU9NB with PID 1228 (started by Sasuke in D:\IntelliJ IDEA\project\springBoot)
+2019-06-26 12:19:01.895 [restartedMain] INFO  com.lmc.Springboot04TestApplication - No active profile set, falling back to default profiles: default
+2019-06-26 12:19:02.056 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-26 12:19:02.057 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-26 12:19:02.057 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-06-26 12:19:02.057 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-26 12:19:02.067 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-26 12:19:02.067 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 171 ms
+2019-06-26 12:19:02.095 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-26 12:19:02.118 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-06-26 12:19:02.124 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-26 12:19:02.127 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-26 12:19:02.127 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Started Springboot04TestApplication in 0.258 seconds (JVM running for 76.896)
+2019-06-26 12:19:02.128 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-06-26 12:19:09.668 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-26 12:19:09.669 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-06-26 12:19:09.675 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2019-06-26 12:19:09.676 [http-nio-8080-exec-2] INFO  com.lmc.controller.TestController - 这是info级别日志1111
+2019-06-26 12:19:43.280 [http-nio-8080-exec-3] INFO  com.lmc.controller.TestController - 这是info级别日志1111
+2019-06-26 15:14:51.032 [Thread-16] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-26 15:14:51.315 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Starting Springboot04TestApplication on DESKTOP-TQGU9NB with PID 1228 (started by Sasuke in D:\IntelliJ IDEA\project\springBoot)
+2019-06-26 15:14:51.315 [restartedMain] INFO  com.lmc.Springboot04TestApplication - No active profile set, falling back to default profiles: default
+2019-06-26 15:14:51.546 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-26 15:14:51.547 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-26 15:14:51.547 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-06-26 15:14:51.547 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-26 15:14:51.561 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-26 15:14:51.562 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 245 ms
+2019-06-26 15:14:51.609 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-26 15:14:51.650 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-06-26 15:14:51.659 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-26 15:14:51.661 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-26 15:14:51.662 [restartedMain] INFO  com.lmc.Springboot04TestApplication - Started Springboot04TestApplication in 0.385 seconds (JVM running for 10627.666)
+2019-06-26 15:14:51.663 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

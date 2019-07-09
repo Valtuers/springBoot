@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var source = new EventSource("/sse");
+    source.onmessage = function(e){
+        document.getElementById("result").innerHTML = e.data;
+    };
+</script>
+<div id="result"></div>
+</body>
+</html>

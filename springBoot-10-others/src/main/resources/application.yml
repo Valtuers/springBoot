@@ -1,0 +1,23 @@
+spring:
+  resources:
+    static-locations: classpath:/static,classpath:/templates
+  activemq:
+    #ActiveMQ的地址
+    broker-url: tcp://localhost:61616
+    #配置用户和密码
+    user: admin
+    password: admin
+  #是否使用发布订阅模式，默认为false，即用的是点对点的模式,点对点模式无法接收queue的消息
+  jms:
+    #自定义jmsListenerContainer后不需要配置该项
+    #pub-sub-domain: true
+    #默认目的地址
+    template:
+      default-destination: activemq.default.destination
+  # 配置elasticsearch
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: localhost:9300
+      repositories:
+        enabled: true

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@1.6/lib/index.css">
+    <!-- 引入组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@1.6/lib/vant.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <van-button type="default" @click="test1">请求1</van-button>
+        <van-button type="primary" @click="test2">请求2</van-button>
+    </div>
+
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data:{
+
+        },
+        methods:{
+            test1(){
+                axios.post("/test1").then((res)=>{
+                    console.log(res.data);
+                });
+            },
+            test2(){
+                axios.post("/all").then((res)=>{
+                    console.log(res.data);
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>

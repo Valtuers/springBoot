@@ -32,7 +32,14 @@ springboot的aop多个切面和织入新功能service类
 
 密码使用MD5散列加密
 
-#### # 09-others
-异步线程
+#### # 09-webflux
+响应式编程
+
+#### # 10-others
+异步线程，开启异步定时任务
 
 使用ActiveMQ实现发送消息，接受消息(必须先运行activemq.bat)
+
+使用elasticsearch搜索框架(必须先运行elasticsearch)
+
+使用SSE服务端主动推送消息

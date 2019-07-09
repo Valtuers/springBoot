@@ -1,1 +1,8 @@
-
+spring:
+  # 自定义启动banner文件的路径
+  banner:
+    location: banner.txt
+  # 设置热部署触发器文件
+  devtools:
+    restart:
+      trigger-file: trigger.txt
