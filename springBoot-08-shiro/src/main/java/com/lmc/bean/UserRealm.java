@@ -1,6 +1,5 @@
 package com.lmc.bean;
 
-import com.lmc.bean.User;
 import com.lmc.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;

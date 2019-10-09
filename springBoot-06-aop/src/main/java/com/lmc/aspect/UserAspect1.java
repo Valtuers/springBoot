@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-@Order(4)//指定多个切面的顺序
-public class MyAspect2 {
+@Order(2)//指定多个切面的顺序
+public class UserAspect1 {
     //切点
     @Pointcut("execution(* com.lmc.service.impl.UserServiceImpl.printUser(..))")
     public void pointCut(){
@@ -20,28 +20,28 @@ public class MyAspect2 {
     @Before("pointCut() && args(user)")
     public void before(JoinPoint jp, User user){
         Object[] args = jp.getArgs();
-        System.out.println("before2.....");
+        System.out.println("before1.....");
     }
 
     @Around("pointCut()")
     public void around(ProceedingJoinPoint jp) throws Throwable {
-        System.out.println("around before2......");
+        System.out.println("around before1......");
         jp.proceed();
-        System.out.println("around after2.......");
+        System.out.println("around after1.......");
     }
 
     @After("pointCut()")
     public void after(){
-        System.out.println("after2.....");
+        System.out.println("after1.....");
     }
 
     @AfterReturning("pointCut()")
     public void afterReturning(){
-        System.out.println("afterReturning2.....");
+        System.out.println("afterReturning1.....");
     }
 
     @AfterThrowing("pointCut()")
     public void afterThrowing(){
-        System.out.println("afterThrowing2.....");
+        System.out.println("afterThrowing1.....");
     }
 }
