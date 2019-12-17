@@ -1,11 +1,34 @@
 package com.lmc.bean;
 
-public class User {
+import java.io.Serializable;
+import java.util.List;
+
+public class User implements Serializable {
+    private int id;
+
     private String username;
-    private String nickname;
+
     private String password;
-    private int age;
-    private String role;
+
+    private String salt;
+
+    private List<Role> roleList;
+
+    public List<Role> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<Role> roleList) {
+        this.roleList = roleList;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -13,14 +36,6 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
     }
 
     public String getPassword() {
@@ -31,29 +46,11 @@ public class User {
         this.password = password;
     }
 
-    public int getAge() {
-        return age;
+    public String getSalt() {
+        return salt;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", password='" + password + '\'' +
-                ", age=" + age +
-                '}';
+    public void setSalt(String salt) {
+        this.salt = salt;
     }
 }

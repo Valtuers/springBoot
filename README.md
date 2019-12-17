@@ -28,9 +28,9 @@ springboot的aop多个切面和织入新功能service类
 导出pdf，excel，上传文件和base64图片
 
 #### # 08-shiro
-用户登录验证，权限等功能
+前后端分离的权限检验
 
-密码使用MD5散列加密
+使用了MyBatis、redis
 
 #### # 09-webflux
 响应式编程

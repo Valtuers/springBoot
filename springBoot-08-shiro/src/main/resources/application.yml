@@ -1,7 +1,7 @@
-spring:
-  thymeleaf:
-    cache: false
+server:
+  port: 8080
 
+spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql:///demo?useUnicode=true&chararcterEncoding=utf-8
@@ -10,4 +10,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
 mybatis:
   type-aliases-package: com.lmc.bean
-  mapper-locations: classpath:com/lmc/dao/**/mapping/*.xml
+#  mapper-locations: classpath:com/lmc/dao/**/mapping/*.xml
+  configuration:
+    #控制台输出sql语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #下划线驼峰转换
+    map-underscore-to-camel-case: true

@@ -4,5 +4,9 @@ import com.lmc.bean.User;
 
 public interface UserService {
 
-    User findUser(String username);
+    User findUserByUserId(int id);
+
+    User findUserRoleByUserName(String username);
+
+    User findUserRoleByUserId(int id);
 }
