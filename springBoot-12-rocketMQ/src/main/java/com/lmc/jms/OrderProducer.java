@@ -15,7 +15,7 @@ public class OrderProducer {
         //多节点用;分割
         producer.setNamesrvAddr(JmsConfig.nameServerAddr);
         //设置主题队列数，默认是4
-        producer.setDefaultTopicQueueNums(2);
+        producer.setDefaultTopicQueueNums(4);
         start();
     }
 

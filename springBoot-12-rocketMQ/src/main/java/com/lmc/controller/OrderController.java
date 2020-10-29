@@ -27,7 +27,7 @@ public class OrderController {
     //同步发送消息
     @RequestMapping("/sendSync")
     public Object sendSync(String text) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
-        Message message = new Message(JmsConfig.topic,"tagA",("支付："+text).getBytes());
+        Message message = new Message(JmsConfig.topic,"同步消息",("支付："+text).getBytes());
         message.setDelayTimeLevel(1);
         SendResult sendResult = orderProducer.getProducer().send(message);
         System.out.println(sendResult);
@@ -37,7 +37,7 @@ public class OrderController {
     //异步发送消息
     @RequestMapping("/sendAsync")
     public void sendAsync(String text) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
-        Message message = new Message(JmsConfig.topic,"tagA",("支付："+text).getBytes());
+        Message message = new Message(JmsConfig.topic,"异步消息",("支付："+text).getBytes());
         message.setDelayTimeLevel(1);
         orderProducer.getProducer().send(message, new SendCallback() {
             @Override
@@ -55,15 +55,15 @@ public class OrderController {
     //一次性发送消息
     @RequestMapping("/sendOneWay")
     public void sendOneWay(String text) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
-        Message message = new Message(JmsConfig.topic,"tagA",("支付："+text).getBytes());
+        Message message = new Message(JmsConfig.topic,"一次性消息",("支付："+text).getBytes());
         orderProducer.getProducer().sendOneway(message);
     }
 
 
-    //同步发送消息
+    //指定队列发送消息
     @RequestMapping("/sendSeletctQueue")
     public Object sendSeletctQueue(String text) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
-        Message message = new Message(JmsConfig.topic,"tagA",("支付："+text).getBytes());
+        Message message = new Message(JmsConfig.topic,"指定队列消息",("支付："+text).getBytes());
         message.setDelayTimeLevel(1);
         SendResult sendResult = orderProducer.getProducer().send(message, new MessageQueueSelector() {
             @Override
@@ -84,7 +84,7 @@ public class OrderController {
         List<SendResult> sendResultList = new ArrayList<>();
         for (int i = 0; i < orderList.size(); i++) {
             Order order = orderList.get(i);
-            Message message = new Message(JmsConfig.order_topic,"",String.valueOf(order.getOrderId()),order.toString().getBytes());
+            Message message = new Message(JmsConfig.order_topic,"顺序消息",String.valueOf(order.getOrderId()),order.toString().getBytes());
             SendResult sendResult = orderProducer.getProducer().send(message, new MessageQueueSelector() {
                 @Override
                 public MessageQueue select(List<MessageQueue> mqs, Message msg, Object arg) {

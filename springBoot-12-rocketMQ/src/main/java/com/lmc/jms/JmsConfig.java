@@ -7,4 +7,6 @@ public class JmsConfig {
     public static final String topic = "lmc_topic";
 
     public static final String order_topic = "order_topic";
+
+    public static final String trac_topic = "trac_topic";
 }

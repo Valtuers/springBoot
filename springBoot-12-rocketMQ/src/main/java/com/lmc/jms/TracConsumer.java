@@ -1,23 +1,21 @@
 package com.lmc.jms;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.*;
+import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
+import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
-import org.apache.rocketmq.common.message.MessageExt;
 import org.apache.rocketmq.common.protocol.heartbeat.MessageModel;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 @Component
-public class OrderConsumer {
-    private String consumerGroup = "order_consumer_group";
+public class TracConsumer {
+    private String consumerGroup = "trac_consumer_group";
 
 
     private DefaultMQPushConsumer consumer;
 
-    public OrderConsumer() {
+    public TracConsumer() {
         this.consumer = new DefaultMQPushConsumer(consumerGroup);
         this.consumer.setNamesrvAddr(JmsConfig.nameServerAddr);
         //默认是集群模式，可以更改为广播模式，但是广播模式不支持重试
@@ -26,7 +24,7 @@ public class OrderConsumer {
 
         try {
             //设置消费的topic和tag
-            this.consumer.subscribe(JmsConfig.topic, "*");
+            this.consumer.subscribe(JmsConfig.trac_topic, "*");
         } catch (MQClientException e) {
             e.printStackTrace();
         }
@@ -66,5 +64,4 @@ public class OrderConsumer {
     public DefaultMQPushConsumer getConsumer(){
         return this.consumer;
     }
-
 }
